@@ -1,0 +1,260 @@
+@media screen and (max-width: 768px){
+    .desktop-br {display: none;}
+    .tablet-br {display: none;}
+    .mobile-br {display: none;}
+    .for-animate {display: block; overflow: hidden; padding-bottom: 2px;}
+    .text-margin-bottom {margin-bottom: 2vw;}
+
+    html {display: block; width: 100%; position: relative;}
+    body {display: block; width: 100%;  position: relative; color: #ffffff; background-color: #000000;}
+
+    a, a:hover {color: #ffffff;}
+    
+    .cursor {display: none; width: 40px; height: 40px; position: fixed; top: -40px; left: -40px; transform: translate(-20px, -20px); pointer-events: none; z-index: 9999; background-color: #8800ff; border-radius: 50%; mix-blend-mode: difference;
+    }
+
+
+    header {display: block; width: 100vw; position: fixed; top: 0; left: 0; z-index: 9999;}
+    .header-wrap {display: block; width: calc(100% - 32px); position: relative; margin: 0 auto;}
+    .header-top {display: block; width: 100%; height: 56px; position: relative;}
+    .header-nav {display: block; width: 100%; height: 56px; position: relative;}
+    .header-set {display: flex; width: 100%; height: 55px; position: relative; justify-content: flex-start; align-items: flex-end;}
+    .header-list {display: block; position: absolute; margin-bottom: 12px;}
+    .header-list:first-child {left: 0;}
+    .header-list:nth-child(2) {left: 80px;}
+    .header-list:last-child {right: 0;}
+    .header-btn {display: block; color: #ffffff; font-size: 16px; font-weight: 500;}
+    .header-line {display: block; width: 100%; height: 1px; background-color: #ffffff;}
+
+    .header-ex {display: none; width: 200px; height: 200px; position: absolute; top: 100px; right: 0; border-radius: 50%; transform-origin: 200px 100px; transform: scale(1); overflow: hidden;}
+    .ex-btn {display: block; width: 196px; height: 196px; position: relative; border: 2px solid #ffffff; border-radius: 50%; background-color: #000000;}
+    .ex-bg {display: block; width: 196px; height: 196px; position: relative; background-color: #8800ff; border-radius: 50%; transform-origin: 50% 50%; transform: scale(0);}
+    .ex-text {display: flex; width: 146px; height: 196px; position: absolute; padding: 0 25px; top: 0; left: 0; border-radius: 50%; flex-direction: column; justify-content: center; font-size: 28px; font-weight: 500;}
+    .ex-inner-bottom {display: flex; width: 100%; justify-content: space-between; align-items: center;}
+    .ex-inner-arrow {display: block; margin-left: 12px;}
+    .ex-inner-arrow img {display: block; width: 100%;}
+    
+
+    .header-ex-mobile {display: block; width: 100%; height: 20px; position: relative; text-align: right;}
+    .ex-btn-mobile {display: inline-block; position: relative; right: 0; font-size: 16px; height: 20px; line-height: 20px; margin-top: 8px; margin-bottom: 8px;}
+    .ex-mobile-line {display: block; width: 100%; height: 1px; position: relative; background-color: #ffffff;; }
+
+    #wrap {display: block; width: 100%;  position: relative; }
+    
+
+    #main {display: block; width: 100%; height: 100vh; position: relative; background-color: #000000; padding-bottom: 80px;}
+    .main-wrap {display: block; width: 100%; height: 100%; position: relative;}
+    .main-bg {display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-image: linear-gradient(90deg, #80808040 1px, transparent 0), linear-gradient(#80808040 1px, transparent 0); background-size: 80px 80px; background-position: 4vw 6vw;}
+    .main-inner {overflow: hidden; display: flex; width: calc(100% - 32px); height: 100%; position: relative; margin: 0 auto; flex-direction: column; justify-content: space-between; align-items: flex-start;}
+    .main-top {display: block; width: 100%; position: relative; margin-top: 110px;}
+    .main-text {display: block; width: 100%; position: relative; margin-bottom: 24px; font-size: 18px; font-weight: 300;}
+    .main-text-line {display: block; width: 100%; height: 1px; position: relative; background-color: #ffffff; margin-bottom: 20px;}
+    .main-title {display: block; width: 100%; position: absolute; bottom: 40px;}
+    .main-title-inner {width: 100%;}
+    .main-title-inner img {width: 100%;}
+
+    .sec {display: block; width:100%; position: relative; background-color: #000000; }
+    .sec-title {display: block; width: calc(100% - 32px); height: 32px; margin: 0 auto; position: sticky; top: 100px; z-index: 9998;}
+    .title-inner {display: flex; width: 100%; height: 31px; position: relative; font-size: 16px; font-weight: 400; top: 1px;}
+    .title-num {display: block; width: 80px;}
+    .title-line-top {display: none;}
+    .title-line-bottom {display: block; width: 100%; height: 1px; position: relative; background-color: #ffffff;}
+    .content {display: block; width: 100%; position: relative; top: -43px;}
+    .line-design-top {display: block; width: 100%; height: 1px; background-color: #ffffff;}
+
+    #about {height: 1180px;}
+    .about-content {height: 1180px;}
+    .about-wrap {display: block; width: calc(100% - 32px); height: calc(100% - 480px); position: relative; margin: 0 auto; padding-top: 480px;}
+    .about-inner {display: flex; width: 100%; height: 100%; position: relative; flex-direction: column; }
+    .about-box {display: flex; width: 100%; position: relative; margin-bottom: 60px; justify-content: space-between;}
+    .about-left {display: block; width: 70px; position: relative;}
+    .about-left-text {display: block; width: 100%; position: relative; font-size: 16px; margin-top: 16px;}
+    .about-blank {display: none; min-width: 215px; width: 365px; position: relative;}
+    .about-right {display: block; width: calc(100% - 80px); position: relative;}
+    .about-right-inner {display: flex; flex-direction: column; width: 100%; position: relative;}
+    .about-right-mean {display: block;  min-width: 320px; width: 400px; position: relative; font-size: 18px; font-weight: 300; line-height: 24px; margin-top: 16px;}
+    .about-right-title {display: block; min-width: 600px; position: relative; font-size: 18vw; font-weight: 800; margin-top: 16px;}
+    .about-right-subtitle {display: block; min-width: 600px; position: relative; font-size: 15vw; font-weight: 700; margin-top: 16px;}
+
+    #research {height: 2580px;}
+    .research-content {height: 100%;}
+    .research-wrap {display: block; width: calc(100% - 32px); height: 910px; position: sticky; top: 0; margin: 0 auto; padding-top: 150px;}
+    .research-inner {display: flex; flex-direction: column; width: 100%; height: 100%; position: relative; overflow: hidden;}
+    .research-left {display: block; width: 100%; height: 100%; position: relative;}
+    .research-stack-set {display: flex; width: 100%; height: 100%; position: relative; flex-direction: column;}
+    .research-stack {display: block; width: 100%; height: 92px; position: relative; margin-bottom: -1px; border-top: 1px solid #ffffff; border-bottom: 1px solid #ffffff;}
+    .research-box {display: block; width: 100%; height: 100%; position: relative;}
+    .quotation {display: block; width: 12px; height: 12px; margin-top: 20px; margin-left: 6px; background-image: url(../../img/index/quote.png); background-size: 12px 12px;}
+    .research-talk {display: flex; width: calc(100% - 12px); position: relative; justify-content: space-between; margin: 8px 6px 0 6px;}
+    .research-talk p {display: block; height: 40px; font-size: 18px; line-height: 40px;}
+    .talk-emoji {display: block; width: 40px; height: 40px; position: relative;}
+    .talk-emoji img {display: block; width: 100%; height: 100%; position: relative;}
+    .research-right {display: block; position: absolute; font-size: 19px; font-weight: 300; top: 600px; right: 0;}
+    .research-arrow {display: inline-block; width: 40px; height: 20px; position: relative; overflow: hidden; margin: 0 6px 0 0;}
+    .research-arrow img {height: 100%; position: absolute; right: 0; bottom: 0;}
+
+    #goal {height: 1480px; display: none;}
+    .goal-content {height: 100%;}
+    .goal-wrap {display: block; width: calc(100% - 32px); height: 880px; position: sticky; top: 0; margin: 0 auto; padding-top: 18vh;}
+    .goal-inner {display: block; width: calc(100% - 450px); height: 100%; position: relative; margin-left: 450px;}
+    .goal-box {display: block; width: 100%; margin-bottom: 3vw;}
+    .goal-num {display: block; width: 100%; position: relative; font-size: 3.2vw;}
+    .goal-sub {display: block; position: relative; top: -1vw; margin-bottom: 0.3vw; margin-left: 16px; font-size: 7.5vw;}
+    .goal-text {display: block; position: relative; font-size: 1.7vw; font-weight: 300; line-height: 2.2vw;}
+    .goal-bottom {margin-top: 3vw;}
+
+    #equip {height: 1680px;}
+    .equip-content {height: 100%;}
+    .equip-wrap {display: block; width: calc(100% - 32px); height: 880px; position: sticky; top: 0; margin: 0 auto; padding-top: 140px;}
+    .equip-inner {display: block; width: 100%; height: 100%; position: relative;  }
+    .equip-top {display: block; width: 100%; position: relative;}
+    .equip-text {display: block; width: 100%; margin: 0 auto; font-size: 24px; color: #000;}
+    .equip-bottom {display: block; width: 100%; height: 100%; position: absolute; bottom: 0; }
+    /* .equip-bottom img {} */
+    .hmd {display: block; width: 80%; position: absolute; left: 10%; bottom: 50%; z-index: 2;}
+    .cont1 {display: block; width: 60%;  position: absolute; left: 16px; bottom: 20%; z-index: 1;}
+    .cont2 {display: block; width: 68%; position: absolute; right: 0; bottom: 10%; z-index: 2;}
+    .oq-text {display: block; position: absolute; right: 16px; color: #000; bottom: 160px;}
+
+    #keyword {height: 1280px;}
+    .keyword-content {height: 100%; }
+    .keyword-wrap {display: block; width: 100%; height: 880px; position: sticky; top: 0; padding-top: 200px; padding-bottom: 200px;}
+    .keyword-inner {display: block; width: 100%; height: 100%; position: relative;}
+    .keyword-box {display: block; width: 100%; height: 23.3%; position: relative; margin-bottom: 5%;}
+    .keyword-main {display: block; width: 100%; height: 100%; position: relative; background-size: auto 100%; background-repeat: repeat-x;}
+    .keyword-main1 {background-image: url(../../img/index/keyword1.jpg); background-position-x: 0;}
+    .keyword-main2 {background-image: url(../../img/index/keyword2.jpg); background-position-x: 0;}
+    .keyword-main3 {background-image: url(../../img/index/keyword3.jpg); background-position-x: 0;}
+    .keyword-text {display: none; position: absolute; z-index: 1; font-size: 20px; opacity: 0;}
+    .keyword-text1 {top: 130%; left: 16px;}
+    .keyword-text2 {top: -70%; right: 16px;}
+    .keyword-text3 {top: -70%; left: 80px;}
+    .keyword-arrow {line-height: 22px; margin-right: 8px;}
+
+    #target {height: 120vh;}
+    .target-content {height: 100%;}
+    .target-wrap {display: block; width: 100%; height: 100vh; position: sticky; top:0; margin-top: -5vh; }
+    .target-inner {display: block; width: 100%; height: 100%; position: relative;}
+    .target-image {display: none; width: 60%; position: relative; margin-left: 150px;}
+    .target-image img {width: 100%;}
+    .target-bg {display: block; width: 100%; height: 120vh; position: absolute; top: 0px; overflow: hidden;}
+    .target-video {height: 100%; position: relative; top:0;}
+    .target-box {display: block; width: calc(100% - 32px); position: relative; top: 40%; margin: 0 auto;}
+    .target-text {display: block; font-size: 22px; line-height: 30px; font-weight: 300;}
+    .target-text-right {text-align: right;}
+    .target-num {vertical-align: top; font-size: 10px;}
+    .text-em {display: inline; border-bottom: 2px solid #ffffff;}
+    .target-text .text-em {display: inline-block; height: 27px; position: relative; top: 8px;}
+    .text-em span {display: inline-block;}
+
+    #space {height: 600vh;}
+    .space-content {height: 100vh; position: sticky; top: 0;}
+    .space-wrap {display: block; width: 100%; height: 100%; position: relative; padding: 0;}
+    .space-inner {display: block; width: 100%; height: 100%; position: relative; overflow: hidden;}
+
+    .space-img {display: block; width: 400%; height: 100%; position: absolute; top: 0; left: 100%; background-color: #ffffff;}
+    .space-img-box {display: block; position: absolute;}
+    .space-img-box img {height:100%;}
+    .img-cs1 {height: 30vh; bottom: 5vh; left: 0;}
+    .img-cs2 {height: 15vh; top: 20vh; left: 30vw;}
+    .img-cs3 {height: 20vh; top: 37vh; left: 50vw;}
+    .img-cs4 {height: 25vh; top: 15vh; left: 95vw;}
+    .img-tr1 {height: 25vh; bottom: 5vh; left: 160vw;}
+    .img-tr2 {height: 30vh; top: 20vh; left: 170vw;}
+    .img-tr3 {height: 35vh; bottom:10vh; left: 220vw;}
+    .img-tr4 {height: 25vh; top: 18vh; left: 280vw;}
+    .img-tr5 {height: 15vh; bottom: 5vh; left: 300vw;}
+    .img-tr6 {height: 35vh; top: 40vh; left: 305vw;}
+
+    .space-text {display: block; width: 200%; position: absolute; top: 0; left:0; color: #000000;}
+    .text-cs {display: block; position: absolute; top: 20vh; margin-left: 16px;}
+    .text-cs-inner {display: flex; position: relative; font-size: 48px; align-items:center; line-height: 56px;}
+    .text-cs-inner:nth-child(2) {left: 24vw; margin-top: -1vw;}
+    .space-star {display: block; position: relative; height: 7vw;}
+    .space-star img {display: block; height: 100%;}
+    .text-cs-kr {display: block; position: absolute; font-size: 12px; bottom: 12px; left: 30px}
+    .text-tr {display: block; position: absolute; top: 20vh; margin-left: 16px; left: 50%;}
+    .text-tr-inner {display: flex; position: relative; font-size: 48px; align-items: center;}
+    .text-tr-kr {display: block; position: relative; left: 30px; font-size: 12px;}
+
+    #experience {height: 1200px; }
+    .experience-content {height: 100%;}
+    .experience-wrap {display: block; width: 100%; height: 880px; position: sticky; top: 0; padding-top: 0;}
+    .experience-inner {display: block; width: 100%; height: 100%; position: relative;}
+    .experience-bg {display: block; width: 100%; height: 110%; position: absolute; overflow: hidden; top: 0;}
+    .experience-bg-color {display: block; width: 100%; height: 100%; position: absolute; background-color: #8800ff; border-top-left-radius: 9999px; border-top-right-radius: 9999px; bottom: 0; transform-origin: 50% 100%; transform: scale(2);}
+    .experience-area {display: block; width: calc(100% - 32px); height: 100%; position: relative; margin: 0 auto; z-index: 1;}
+    .experience-box {display: block; position: absolute; font-size: 60px;}
+    .box-experience {top: 180px;}
+    .box-video {top: 420px; right: 0;}
+    .experience-ex-btn, .experience-video-btn {color: #000000;}
+    .experience-ex-btn:hover,  .experience-video-btn:hover {color: #000000;}
+    .experience-star {display: block; height: 40px;}
+    .experience-star .experience-inner {display: block;}
+    .experience-text-top {display: block; height: 72px; margin-top: -2vw;}
+    .experience-text-bottom {display: flex; height: 72px; justify-content: space-between; margin-top: -2vw;}
+    .experience-arrow {height: 60px; position: relative; top: -8px; right: -8px;}
+    .experience-arrow img {height:100%;}
+
+    #video {height: 1480px; background-color: #8800ff;}
+    .video-content {height: 100%;}
+    .video-wrap {display: block; width: 100%; height: 1080px; position: sticky; top:0;}
+    .video-inner {display: block; width: 100%; height: 100%; position: relative;}
+    .video-bg {display: block; width: 100%; height: 110%; position: absolute; top: 0; left: 0; overflow: hidden;}
+    .video-bg-inner {display: block; width: 100%; height: 100%; position: absolute; background-color: #000000; border-top-left-radius: 9999px; border-top-right-radius: 9999px; bottom: 0; transform-origin: 50% 100%; transform: scale(2);}
+    /* .video-area {display: block; width: 100%; height: 56.25vw; position: relative;} */
+    /* .video-player {display: block; width: 100%; position: absolute; top: -43px;} */
+    .video-text {display: block; width: calc(100% - 32px); height: 100%; position: relative; margin: 0 auto;}
+    .video-text-box {display: block; position: absolute; top: 40%; right: 0; font-size: 20px; line-height: 36px;}
+    .video-text-box p {display: block; width: 100%;}
+    .video-text-right {text-align: right;}
+
+    #review {height: 880px;}
+    .review-content {height: 100%;}
+    .review-wrap {display: block; width: calc(100% - 32px); height: calc(100% - 280px); position: relative; margin: 0 auto; padding-top: 280px;}
+    .review-inner {display: block; width: 100%; height: 100%; position: relative;}
+    .review-bg {opacity: 0.7; display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+    .review-bg p {display: block; position: relative; font-size: 11vw; line-height: 9vw; white-space:pre;}
+    .review-bg-right {text-align: right;}
+    .review-area {display: block; width: 100%; height: 100%; position: relative; z-index: 1;}
+    .review-top {display: flex; width: 100%; height: calc(90% - 100px); position: relative; padding-bottom: 20px; justify-content: space-between; align-items: flex-start;}
+    .review-left {display: flex; width: 50%; height: 100%; position: relative; flex-direction: column; justify-content: flex-end; align-items: flex-start;}
+    .review-right {display: flex; width: 50%; height:100%; position: relative; flex-direction: column; justify-content: flex-end; align-items: flex-end;}
+    .review-talk {display: inline-block; margin-bottom: 16px; padding: 8px 12px; font-size: 14px; border: 1px solid #ffffff; border-radius: 40px; background-color: #000000;}
+    .review-bottom {display: block; width: 100%; height: 80px; position: relative;}
+    .review-form {display: flex; width: 100%; height: 80px; position: relative;}
+    .review-input {display: block; width: calc(100% - 68px); height: 48px; border: 1px solid #ffffff;}
+    .review-type {display: block; width: calc(100% - 32px); height: 100%; padding: 0 16px; font-size: 24px; border: none; background-color: #000000; color: #ffffff;}
+    .review-btn {display: block; width: 60px; height: 48px; border: 1px solid #ffffff; margin-left: 12px;}
+    .review-submit {display: block; width: 100%; height: 100%; font-size: 20px; color: #4D4D4D;}
+
+    #team {height: 1280px;}
+    .team-content {height: 100%;}
+    .team-wrap {display: block; width: calc(100% - 32px); height: calc(100% - 320px); position: relative; margin: 0 auto; padding-top: 320px;}
+    .team-inner {display: block; width: 100%; height: 100%; position: relative;}
+    .team-top {display: block; width: 100%; height: 52vw; position: relative;}
+    .team-main-bg {display: flex; width: 100%; position: absolute; justify-content: space-between; top: 33.3%;}
+    .team-bg-circle {display: block; width: 22vw; height: 22vw; position: relative; background-color: #8800ff; border-radius: 50%;}
+    
+    .team-main-emoji {display: flex; width: 100%; position: absolute; justify-content: space-between; top: 33.3%;}
+    .team-emoji {display: block; width: 22vw; height: 22vw; position: relative;}
+    .team-emoji img {display: block; width: 116%; height: 116%; margin-top: -8%; margin-left: -8%;}
+
+    .team-main-text1 {display: block; position: absolute; font-size: 20vw; top: 0; left: 0;}
+    .team-main-text2 {display: block; position: absolute; font-size: 20vw; top: 58%; right: 0;}
+
+    .team-bottom {display: flex; flex-direction: column; width: 100%; height: 20vw; padding-top: 120px; padding-bottom: 120px; position: relative; justify-content: space-between;}
+    .team-member-title {display: block; width: 100%; height: 100%; position: relative; font-size: 30px;}
+    .team-member {display: block; width: 100%; position: relative;}
+    .team-member-ul {display: flex; width: 100%; height: 100%; position: relative; flex-wrap: wrap;}
+    .team-member-li {display: block; width: 46%; margin-right: 4%; margin-top: 40px;}
+    .team-member-box {display: block; width: 100%; height: 100%;}
+    .team-member-star, .team-member-part {display: block; width: 100%; font-size: 14px;}
+    .team-member-name {display: block; width: 100%; font-size: 18px; margin-top: 8px; margin-bottom: 60px;}
+    .team-member-email, .team-member-phone {display: block; width: 100%; font-size: 14px; margin-top: 6px;}
+    .team-member-portfolio {display: block; width: 100%; font-size: 12px; line-height: 120%; text-decoration: underline; margin-top: 20px; word-wrap: break-word;}
+
+    .video-area {display: none; justify-content: center; width: 100%; height: 100vh;  position: fixed; top: 0; left: 0; overflow: hidden; z-index: 9998; background-color :#000; opacity: 0;}
+    .video-player {width: 100%; object-fit: contain; position: relative; }
+    .video-close {display: block; position: absolute; top: 130px; left: 16px; cursor: pointer; z-index: 1;}
+}
