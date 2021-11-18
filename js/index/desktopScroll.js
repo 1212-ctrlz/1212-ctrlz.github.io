@@ -791,6 +791,7 @@ $(document).ready(function($){
         experienceScroll();
         videoScroll();        
     } else {
+        if($(window).width() <= 768){
         $('#wrap').css('overflow','hidden');
         $('.sec-title').css('position','relative');
         $('.content').css('position','absolute');
@@ -805,6 +806,18 @@ $(document).ready(function($){
         experienceScroll();
         videoScroll();    
         mobileSticky();
+        } else if($(window).width() > 768){
+            pageIntro();
+        exBtnScroll();
+        aboutScroll();
+        researchScroll();
+        // goalScroll();
+        equipScroll();
+        targetScroll();
+        spaceScroll();
+        experienceScroll();
+        videoScroll();    
+        }
     }
 });
 
