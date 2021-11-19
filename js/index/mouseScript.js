@@ -111,25 +111,48 @@ $(window).on('resize', function(){
     }) 
 })
 
-var video = $('.video-area').find('video');
-function play(){
-    video.get(0).currentTime = 0;
-    video.get(0).play();
-  }
-  function pause(){
-    video.get(0).pause();
-  }
-  function stop(){
-    video.get(0).pause();
-    video.get(0).currentTime = 0;
-  }
+// var video = $('.video-area').find('video');
+// function play(){
+//     video.get(0).currentTime = 0;
+//     video.get(0).play();
+//   }
+//   function pause(){
+//     video.get(0).pause();
+//   }
+//   function stop(){
+//     video.get(0).pause();
+//     video.get(0).currentTime = 0;
+//   }
+
+var videoBool = false;
 $('.experience-video-btn').on('click', function(){
+    videoBool = true;
     $('.video-area').css({'display':'flex'}).stop().animate({'opacity':'1'}, 300);
-    play();
+    // play();
+    $('.video-player')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+
 })
+// $('.video-cover').on('click', function(){
+//     if(videoBool == true){
+//         videoBool = false;
+//         $('.pause-icon').css({'display':'block'});
+//         // play();
+//         $('.video-player')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+//     } else {
+//         videoBool = true;
+//         $('.pause-icon').css({'display':'none'});
+//         // play();
+//         $('.video-player')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+//     }
+// })
 $('.video-close').on('click', function(){
-    $('.video-area').css({'display':'none'}).stop().animate({'opacity':'0'}, 300);
-    stop();
+    videoBool = false;
+    $('.video-area').stop().animate({'opacity':'0'}, 300, function(){
+        $('.video-area').css({'display':'none'})
+    });
+    // stop();
+    $('.video-player')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+
 })
 $('.non-scroll').on('scroll touchmove mousewheel', function(e){
 
@@ -140,4 +163,6 @@ $('.non-scroll').on('scroll touchmove mousewheel', function(e){
     return false;
     
 })
+
+    
     
