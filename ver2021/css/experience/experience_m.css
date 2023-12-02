@@ -1,0 +1,171 @@
+/* mobile */
+@media screen and (max-width: 1024px){
+    /* * {cursor: none;} */
+
+    html {display: block; width: 100%; position: relative;}
+    body {display: block; width: 100%; height: 100vh; position: relative; color: #ffffff; background-color: #000000; -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
+
+    a, a:hover {color: #ffffff;}
+
+    .cursor {cursor: none; display: none; width: 40px; height: 40px; position: fixed; top: -40px; left: -40px; transform: translate(-20px, -20px); pointer-events: none; z-index: 9999; background-color: #8800ff; border-radius: 50%; mix-blend-mode: difference;}
+
+    header {display: block; width: 100vw; position: fixed; top: 0; left: 0; z-index: 3;}
+    .header-wrap {display: block; width: calc(100% - 32px); position: relative; margin: 0 auto;}
+    .header-top {display: block; width: 100%; height: 56px; position: relative;}
+    .header-nav {display: block; width: 100%; height: 56px; position: relative;}
+    .header-set {display: flex; width: 100%; height: 55px; position: relative; justify-content: flex-start; align-items: flex-end;}
+    .header-list {display: block; position: absolute; margin-bottom: 12px;}
+    .header-list:first-child {left: 0;}
+    .header-list:nth-child(2) {left: 80px;}
+    .header-list:last-child {right: 0;}
+    .header-btn {display: block; color: #ffffff; font-size: 16px; font-weight: 500;}
+    .header-line {display: block; width: 100%; height: 1px; background-color: #ffffff;}
+
+    #wrap {display: block; width: 100%; height: 100%; position: relative;}
+    
+    #intro {display: block; width: 100%; height: 100vh; position: relative; overflow: hidden; z-index: 2;}
+    .intro-video {width: 100%; height: 100%; position: relative; object-fit: fill;}
+    .intro-cover {display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+    
+    #experience {display: block; width: 100%; height: 100vh; position: absolute; top: 0; left: 0; overflow: hidden; background-color: #000000; opacity: 0; z-index: 1;}
+    
+    #map {display: block; width:100%; height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: #000000; z-index: 4;}
+    .map-area {display: block; width: 70%; height: calc(100% - 60px); position: relative; margin: 60px auto 0 auto; z-index: 3;}
+    svg.map-line {width: 100%; height: 100%;}
+    path{
+        -webkit-transition: stroke-dashoffset 2s ease-in-out;
+        transition: stroke-dashoffset 2s ease-in-out;
+    } 
+
+    .mission-btn {cursor: pointer;}
+
+    .mission-btn-left {display: flex; width: 230px; height: calc(95% - 80px); position: absolute; top: 80px; left: 16px; flex-direction: column;}
+    .mission-text-btn {display: flex; position: relative; flex-direction: row; color: #ffffff; align-items: flex-end;}
+    .mission-btn-num {display: block; font-size: 40px;}
+    .mission-btn-cs {display: block; width: 100%; position: absolute; bottom: 0;}
+    .mission-btn-text {display: block; text-align: left; font-size: 15px; position: relative; left: 8px; bottom: 4px;}
+    .mission-btn-right {display: flex; flex-direction: row; color: #ffffff; align-items: flex-end; position: absolute; top: 30%; right: 16px;}
+    .mission-btn-right .mission-btn-text {margin-right: 8px; left: 0; text-align: right;}
+    
+    .intro-btn {display: flex; flex-direction: column; align-items: flex-end; width: 200px; position: absolute; right: 16px; bottom: 50px; color: #ffffff;}
+    .intro-btn-text {display: block; text-align: right; font-size: 36px; line-height: 40px;}
+    .intro-btn-arrow {display: block; right: 20px; margin-top: 12px; width: 60px;}
+    .intro-btn-arrow img {width: 100%; -moz-transform: scaleX(-1); 
+        -o-transform: scaleX(-1); 
+   -webkit-transform: scaleX(-1); 
+           transform: scaleX(-1);   
+          filter: FlipH;
+     -ms-filter: "FlipH";}
+    /* .mission1-btn {display: block; width: 5vw; height: 7vh;position:absolute; bottom: 33%; left: 25%; background-color: #8800ff; z-index: 9;} */
+
+    /* .map-text {
+        display: block;
+        position: absolute;
+        color: #ffffff;
+        z-index: 10;
+        font-size: 1.8vw;
+        line-height: 1.8vw;
+    }
+    .map-text1 {
+        top: calc(50% - 3vw); right: calc(50% + 21vw);
+    }
+    .map-text2 {
+        top: calc(50% - 10vw); left: calc(50% + 18vw);
+    }
+    .map-text3 {
+        top: calc(50% - 12.5vw); right: calc(50% + 21vw);
+    } */
+
+    #mission-wrap {display: block; width: 100%; height: 100vh; position: absolute; top: 0; left: 0; overflow: hidden; z-index: 0; opacity: 0;}
+    .mission-ui-back {display: block; width: 30px; height: 20px; position: absolute; top: 40px; left: 16px; background-image: url(../../img/experience/back.png); background-size: cover; background-position: top left; background-repeat: no-repeat; font-size: 0; color: transparent; text-indent: -9999px; z-index: 9999;}
+    .mission-ui-right {display: flex; width: 80px; flex-direction: row; align-items: flex-end; position: absolute; right: 16px; top: 30px; z-index: 9997;}
+    .mission-ui-list {display: block; width: 30px; height: 30px; margin-left: 10px; position: relative;}
+    .mission-ui-retry {display: block; width: 30px; height: 30px; line-height: 30px; color: #ffffff; background-image: url(../../img/experience/re-btn.png); background-size: 30px 30px; background-repeat: no-repeat; background-position-x: left; font-size: 0; text-indent: -9999; color: transparent;}
+    .mission-ui-close {display: block; width: 30px; height: 30px; line-height: 30px; color: #ffffff; background-image: url(../../img/experience/fin-btn.png); background-size: 30px 30px; background-repeat: no-repeat; background-position-x: left;  font-size: 0; text-indent: -9999; color: transparent;}
+    .mission-ui-play {display: block; width: 60px; height: 60px; position: absolute; top: 200px; right: 16px; border-radius: 50%; font-size: 20px; color: #ffffff; background-color: #8800ff; z-index: 9997;}
+
+
+    .mission {display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: #000000;}
+    .mission-title {display: block; width: calc(100% - 56px); position: relative; margin: 40px 0 0 52px; z-index: 9999;}
+    .mission-num {display: block; position: relative; font-size: 16px; font-weight: 300; margin-bottom: 4px;}
+    .mission-text-ko {display: block; position: relative; font-size: 24px; font-weight: 300; line-height: 36px; overflow: visible;}
+    .mission-text-en {display: block; position: relative; font-size: 24px; font-weight: 300; color: #8800ff; line-height: 36px; overflow: visible;}
+    .mission-container {display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+    
+    .mission1 {z-index: 0;}
+    /* .mission1-container {display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0;} */
+    
+    .laptop-container {display: flex; width: 100%; height: 100%; position:relative; justify-content: center;}
+    .mockup {display: inline-block; position: absolute; z-index: 0; text-align: center; font-size: 0; perspective: 2400px; perspective-origin: 50% 100%; opacity: 1; bottom: 10%; transform-origin: center 100%; transform: scale(0.8);/*transition: 500ms opacity;*/ }
+    .mockup .part .top, .mockup .part .bottom {position: absolute;top: 0;left: 0;}
+    #mission1 .mockup .part.top {transform: translate3d(0, 0, 0) rotateX(-90deg);}
+    #mission2 .mockup .part.top {transform: translate3d(0, 0, 0) rotateX(0deg);}
+    .mockup .part {display: inline-block; position: relative; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; transform-origin: 50% 100%; transition: 500ms ease-out;}
+    .mockup.opened .part .top {transform: translate3d(0, 0, -11px) rotateX(90deg) scale(1, 1);}
+    .mockup .part .top {transform-origin: 50% 0; transform: translate3d(0, 0, -11px) rotateX(90deg); transition: 500ms ease-in;}
+    
+    /* .mockup:hover .part.top {
+        transform: translate3d(0, 0, 0) rotateX(0deg);
+    }    */
+
+    .mockup img {display: block; max-width: 100%; backface-visibility: hidden;}
+    .mockup .part .cover {position: relative;}
+    .mockup .laptop-bg {display: block; position: absolute; top: 8%; left: 2%; width: 96%; border-radius: 6px; backface-visibility: hidden; transform: translate3d(0, 0, 1px);}
+    .mockup .part.bottom {position: absolute;top: 0;left: 0;transform: translate3d(0, 0, 0) rotateX(-90deg);}
+    .mockup .part .bottom {transform-origin: 50% 0; transform: translate3d(0,0,0) rotateX(90deg);}
+
+    .drag-container {position: absolute;display: flex;flex-direction: row;justify-content: space-between;align-items: center;width: 360px;height: 60vh;z-index: 6;bottom: 7.5%;left: calc(50% - 180px);opacity: 0;}
+    .drag-button {width: 100%;height: 35px;border: 1px solid #ffffff;position: absolute;bottom: 0;z-index: 999;cursor:grab;}
+    .drag-target {width: 100%;height: 35px;border: 1px solid #ffffff;border-style: dashed;position: absolute;top: 0;z-index: 999;}
+    .drag-line {display: none; position: absolute; top: 60px;left: 400px;/* width: calc(100% - 120px); height: 1px; */ width: 1px; height: calc(100% - 120px); border-left: 1px dashed #ffffff; z-index: 999;}
+
+
+    .mission2 {z-index: 0;}
+
+    .error-container {background-color: transparent; display: block; width: 100%;  height: 55vh; position: absolute; bottom: 10%; left: 0;}
+    .error {display: block; width: 150px; height: 90px; position: absolute; background-color: #000000; border: 1px solid #ffffff; border-radius: 16px;}
+    .error-close {display: block; width: 30px; height: 30px; position: absolute; top: 8px; right: 8px; border-radius: 50%; background-color: #FF0000; cursor: pointer;}
+    .error-close img {display: block; width: 60%; position: relative; top: 20%; left: 20%;}
+    .error-top {display: block; width: 100%; height: 1px; position:relative; top: 46px; background-color: #ffffff;}
+    .error-text {display: block; width: 100%; position: absolute; top: 30px; left: 0; text-align: center;  font-size: 24px; color: #FF0000;}
+    .complete-container {background-color: transparent; display: none; opacity: 0; width: 100%; height: 55vh; position: absolute; bottom: 5%; left: 0;}
+    .complete-box {display: block; opacity: 1; width: 300px; height: 180px; position: absolute; top: 100px; left: calc(50% - 150px); border-radius: 20px; text-align: center; line-height: 180px; font-size: 24px; background-color: #8800ff; color: #ffffff; font-weight: 500;}
+
+    .mission3 {z-index: 0;}
+    .keyboard-container {display: block; width: 600px; position: absolute; left: 10%; bottom: 10%;}
+    .keyboard-image {display: block; width: 100%;}
+    .s-key {display: block; width: 36px; height: 33px; position: absolute; top: 63px; left: 146px; font-size: 20px; color: #ffffff; border-radius: 6px; border: 1px solid #ffffff; overflow: hidden;}
+    .ctrl-key {display: block; width: 53px; height: 33px; position: absolute; top: 145px; left: 150px; font-size: 20px; color: #ffffff; border-radius: 6px; border: 1px solid #ffffff; }
+    .key-bg {display: block; width: 100%; height: 100%; position: absolute; top: 0; left:0; border-radius: 6px; background-color: #8800ff;}
+    .key-text {display: block; width: 100%; height: 100%; position: absolute; top: 2px; left: 0; border-radius: 6px; }
+
+
+    .mission4 {z-index: 0;}
+    .submit-container {display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+    .work-list {display: block; width: 84vw; height: 18vw;  position: absolute; bottom: 10%; left: 8vw;}
+    .work-btn {display: block; width: 18vw; height: 18vw; position: absolute;}
+    .ae-btn {top: 0; left: 0vw;}
+    .ps-btn {top: 0; left: 22vw;}
+    .il-btn {top: 0; left: 44vw;}
+    .id-btn {top: 0; left: 66vw;}
+    
+    *[draggable=true] {user-select:none; -khtml-user-drag: element; cursor: move;}
+
+    .folder-wrap {display: block; width: 24vw; height: 24vw; position: absolute; top: calc(50% - 2vw); left: 38vw;}
+    #bin {width: 24vw; height: 24vw; position: absolute;}
+    
+
+    .mission5 {z-index: 0;}
+    .mission5-container {display: block; width: 100%; height: 100%; position: absolute; top: 0; z-index: 9998;}
+    .mission5-video {display: block; width: 100%; height: 100%; margin: 0 auto;  object-fit: contain}
+
+    .mission6 {z-index: 0;}
+    .mission6-container {display: block; width: 100%; height: 100%; position: absolute; top: 0; z-index: 9998;}
+    .mission6-video {display: block; width: 100%; height: 100%; margin: 0 auto;  object-fit: contain}
+
+    .mission-video-container {display: none; width: 100%;  height: 100%; text-align: center; position: absolute; top:0; left: 0; background-color: #00000080; z-index: 9999; opacity: 0;}
+    .mission-video-wrap {display: block; width: 100%; height: 100%; position: relative;}   
+    .mission-video {display: block; width: 100%; height: 100%; position: relative; margin: 0 auto; object-fit: contain;}   
+    .mission-video-close {display: block; width: 30px; height: 30px; position: absolute; top: 36px; right: 16px;  z-index: 1;}
+    .mission-video-close img {display: block; width: 30px; height: 30px; position: relative; }
+}
